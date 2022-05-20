@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/main_margin"
+    android:background="@color/item_color"
+    android:orientation="vertical"
+    android:padding="@dimen/main_margin"
+    tools:context="com.example.android.musicapp.NowPlayingActivity">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".65">
+
+                <ImageView
+                    android:id="@+id/iv_equalizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_equalizer_white_36dp"
+                    android:tint="@color/media_item_icon_not_playing"
+                    android:tintMode="src_in" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_spent_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00/00:00"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/cp_streaming_music"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cpb_background_progressbar_color="#FFCDD2"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progressbar_color="#F44336"
+            app:cpb_progressbar_width="10dp" />
+
+
+    </FrameLayout>
+
+    <ImageView
+        style="@style/NowPlayingStyle"
+        android:src="@drawable/background_play" />
+
+    <TextView
+        android:id="@+id/item_first_line"
+        style="@style/NowPlayingTextStyle"
+        android:text="Line 1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_second_line"
+        style="@style/NowPlayingTextStyle"
+        android:text="Line 2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/play_pause"
+                style="@style/PlayButtonStyle"
+                android:background="@drawable/iconpause" />
+
+            <Button
+                android:id="@+id/play_preview"
+                style="@style/PlayButtonStyle"
+                android:background="@drawable/iconpreview" />
+
+            <Button
+                android:id="@+id/play_button"
+                style="@style/PlayButtonStyle"
+                android:background="@drawable/iconplay" />
+
+            <Button
+                android:id="@+id/play_next"
+                style="@style/PlayButtonStyle"
+                android:background="@drawable/iconnext" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

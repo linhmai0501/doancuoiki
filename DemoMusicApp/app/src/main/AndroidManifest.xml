@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.musicapp">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="@string/category_albums"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ArtistsActivity"
+            android:label="Ca sĩ"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".PlaylistActivity"
+            android:label="Bảng xếp hạng nhạc Việt"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TracksActivity"
+            android:label="Bài hát mới nhất"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Album1Activity"
+            android:label="Album Sơn Tùng"
+            android:parentActivityName=".AlbumsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlbumsActivity" />
+        </activity>
+        <activity
+            android:name=".Album2Activity"
+            android:label="Album Phan Mạnh Quỳnh"
+            android:parentActivityName=".AlbumsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlbumsActivity" />
+        </activity>
+        <activity
+            android:name=".Album3Activity"
+            android:label="Album Noo Phước Thịnh"
+            android:parentActivityName=".AlbumsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlbumsActivity" />
+        </activity>
+        <activity
+            android:name=".Album4Activity"
+            android:label="Album nhạc bất hữu"
+            android:parentActivityName=".AlbumsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlbumsActivity" />
+        </activity>
+        <activity
+            android:name=".Album5Activity"
+            android:label="Album đã đến lúc"
+            android:parentActivityName=".AlbumsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlbumsActivity" />
+        </activity>
+        <activity
+            android:name=".Album6Activity"
+            android:label="Album Ngàn năm thương nhớ"
+            android:parentActivityName=".AlbumsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlbumsActivity" />
+        </activity>
+        <activity
+            android:name=".Album7Activity"
+            android:label="Album Tứ Quý Sài Gòn"
+            android:parentActivityName=".AlbumsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlbumsActivity" />
+        </activity>
+
+        <activity
+            android:name=".Artist1Activity"
+            android:label="Mr.Siro"
+            android:parentActivityName=".ArtistsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArtistsActivity" />
+        </activity>
+        <activity
+            android:name=".Artist2Activity"
+            android:label="Khắc Việt"
+            android:parentActivityName=".ArtistsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArtistsActivity" />
+        </activity>
+        <activity
+            android:name=".Artist3Activity"
+            android:label="Trịnh Thăng Bình"
+            android:parentActivityName=".ArtistsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArtistsActivity" />
+        </activity>
+        <activity
+            android:name=".Artist4Activity"
+            android:label="Bích Phương"
+            android:parentActivityName=".ArtistsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArtistsActivity" />
+        </activity>
+        <activity
+            android:name=".Artist5Activity"
+            android:label="Châu Khải Phong"
+            android:parentActivityName=".ArtistsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArtistsActivity" />
+        </activity>
+
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="Nghe và cảm nhận"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

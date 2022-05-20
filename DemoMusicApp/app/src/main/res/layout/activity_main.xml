@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <LinearLayout
+        style="@style/LayoutRawStyle"
+        android:paddingBottom="@dimen/main_margin">
+
+        <LinearLayout
+            style="@style/CategoryStyle"
+            android:layout_marginRight="@dimen/main_margin"
+            android:background="@color/category_albums"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/albums_text"
+                style="@style/CategoryTextStyle"
+                android:text="@string/category_albums" />
+
+            <ImageView
+                android:id="@+id/albums"
+                style="@style/CategoryImageStyle"
+                android:src="@drawable/albums" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CategoryStyle"
+            android:background="@color/category_artists"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artists_text"
+                style="@style/CategoryTextStyle"
+                android:text="Ca sĩ" />
+
+            <ImageView
+                android:id="@+id/artists"
+                style="@style/CategoryImageStyle"
+                android:src="@drawable/artists" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutRawStyle">
+
+
+        <LinearLayout
+            style="@style/CategoryStyle"
+            android:layout_marginRight="@dimen/main_margin"
+            android:background="@color/category_playlist"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playlist_text"
+                style="@style/CategoryTextStyle"
+                android:text="Bảng xếp hạng"/>
+
+
+            <ImageView
+                android:id="@+id/playlist"
+                style="@style/CategoryImageStyle"
+                android:src="@drawable/playlist" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CategoryStyle"
+            android:background="@color/category_tracks"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tracks_text"
+                style="@style/CategoryTextStyle"
+                android:text="Bài hát Mới" />
+
+            <ImageView
+                android:id="@+id/tracks"
+                style="@style/CategoryImageStyle"
+                android:src="@drawable/tracks" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
